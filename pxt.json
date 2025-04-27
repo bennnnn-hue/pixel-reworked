@@ -15,7 +15,8 @@
         "tilemaps": "github:microsoft/pxt-tilemaps#v1.12.0",
         "pxt-cloudy-background": "github:jwunderl/pxt-cloudy-background#v0.0.10",
         "arcade-mini-menu": "github:riknoll/arcade-mini-menu#v0.0.1",
-        "Satisfaction": "pub:78049-34790-20746-55411"
+        "Satisfaction": "pub:78049-34790-20746-55411",
+        "Notifications": "github:unsignedarduino/notifications#de6517dcc280cafe902ef212f59d4f55a982c7ec"
     },
     "files": [
         "main.blocks",
@@ -34,7 +35,7 @@
         "branch": "v1.12.56",
         "tag": "v1.12.56",
         "commits": "https://github.com/microsoft/pxt-arcade/commits/415ef2df2ac233e8d214fef5f4ea26f2f5de232a",
-        "target": "1.12.56",
+        "target": "2.0.53",
         "pxt": "8.5.67",
         "targetId": "arcade"
     },
