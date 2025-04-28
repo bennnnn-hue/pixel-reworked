@@ -456,9 +456,9 @@ info.onCountdownEnd(function () {
         tileUtil.forEachTileInMap(tileUtil.currentTilemap(), function (column, row, location) {
             tileUtil.setWallAt(Forest, location, false)
         })
-        tileUtil.replaceAllTiles(assets.tile`myTile34`, assets.tile`myTile27`)
-        tileUtil.replaceAllTiles(assets.tile`myTile45`, assets.tile`myTile27`)
-        tileUtil.replaceAllTiles(assets.tile`myTile26`, assets.tile`myTile27`)
+        tileUtil.replaceAllTiles(assets.tile`myTile34`, assets.tile`myTile65`)
+        tileUtil.replaceAllTiles(assets.tile`myTile45`, assets.tile`myTile65`)
+        tileUtil.replaceAllTiles(assets.tile`myTile26`, assets.tile`myTile65`)
     } else if (tileUtil.currentTilemap() == Factory) {
         tileUtil.forEachTileInMap(tileUtil.currentTilemap(), function (column, row, location) {
             tileUtil.setWallAt(Factory, location, false)
