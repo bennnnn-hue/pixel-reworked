@@ -172,7 +172,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 100,
                 characterAnimations.rule(Predicate.Moving)
                 )
-                extraEffects.createSpreadEffectOnAnchor(Knife, extraEffects.createSingleColorSpreadEffectData(5, ExtraEffectPresetShape.Spark), 5000, 5)
             }
             if (controller.A.isPressed() && Right == 1) {
                 launched = false
@@ -241,7 +240,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 100,
                 characterAnimations.rule(Predicate.Moving)
                 )
-                extraEffects.createSpreadEffectOnAnchor(Knife, extraEffects.createSingleColorSpreadEffectData(5, ExtraEffectPresetShape.Spark), 5000, 5)
             }
         }
         if (Weapon_Selection_Boomerang == false && Weapon_Selection_Gun == true) {
@@ -261,7 +259,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 Bullet = sprites.createProjectileFromSprite(img`
                     b a 
                     `, Zenith, 400, 0)
-                Zenith.startEffect(effects.spray, 100)
+                Zenith.startEffect(effects.ashes, 100)
                 extraEffects.createSpreadEffectOnAnchor(Bullet, extraEffects.createFullPresetsSpreadEffectData(ExtraEffectPresetColor.Fire, ExtraEffectPresetShape.Spark), 100, 4)
                 Bullet.setKind(SpriteKind.Bullet)
             }
@@ -286,7 +284,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 0,
                 2,
                 200
-                ), 2000)
+                ), 5000)
                 BR.setFlag(SpriteFlag.GhostThroughWalls, true)
                 info.changeLifeBy(-1)
             }
@@ -666,6 +664,7 @@ events.spriteEvent(SpriteKind.Bullet, SpriteKind.Enemy, events.SpriteEvent.Start
     extraEffects.createSpreadEffectOnAnchor(otherSprite, extraEffects.createSingleColorSpreadEffectData(3, ExtraEffectPresetShape.Explosion), 100, 1)
     scene.cameraShake(4, 500)
     sprites.destroy(otherSprite)
+    sprites.destroy(sprite)
     if (spriteutils.isDestroyed(otherSprite)) {
         info.changeScoreBy(1)
     }
